@@ -1,20 +1,13 @@
-// Mendapatkan elemen HTML
-const audioFileInput = document.getElementById('audioFile');
-const playButton = document.getElementById('playAudio');
-const audioPlayer = document.getElementById('audioPlayer');
+document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+    e.preventDefault();
 
-// Event listener untuk ketika file audio diunggah
-audioFileInput.addEventListener('change', function() {
-    const file = audioFileInput.files[0];
-    if (file) {
-        const fileURL = URL.createObjectURL(file);
-        audioPlayer.src = fileURL;
-        playButton.disabled = false;  // Mengaktifkan tombol putar audio
-        audioPlayer.style.display = 'block';  // Menampilkan kontrol audio
+    const phoneNumber = document.getElementById('phoneNumber').value;
+    const message = document.getElementById('message').value;
+    
+    if (phoneNumber && message) {
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');
+    } else {
+        alert('Harap masukkan nomor WhatsApp dan pesan.');
     }
-});
-
-// Event listener untuk tombol putar audio
-playButton.addEventListener('click', function() {
-    audioPlayer.play();
 });

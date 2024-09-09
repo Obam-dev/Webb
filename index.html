@@ -3,32 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kata-Kata & Audio</title>
+    <title>Quotes & Music</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Quotes & Audio</h1>
+        <h1>Quotes & Music</h1>
         
-        <div class="quote">
+        <div class="quote" id="quote1">
             <p>"Akan ku cintai hebat dirimu, asal jangan main di belakangku."</p>
         </div>
 
-        <div class="quote">
+        <div class="quote" id="quote2">
             <p>"Kamu tidak boleh memaksa seseorang untuk mencintaimu, hanya karena kamu sangat tulus padanya."</p>
         </div>
 
-        <div class="quote">
+        <div class="quote" id="quote3">
             <p>"Aku tidak akan pernah lupa, di mana hari itu aku mulai menyukai mu."</p>
         </div>
         
-        <div class="audio-control">
-            <label for="audioFile">Upload Audio:</label>
-            <input type="file" id="audioFile" accept="audio/*">
-            <button id="playAudio" disabled>Putar Audio</button>
-        </div>
-
-        <audio id="n" controls style="display: none;"></audio>
+        <button id="playMusicButton">Mulai Lagu</button>
+        <audio id="audioPlayer" src="ni.mp3"></audio>
     </div>
 
     <script src="script.js"></script>
