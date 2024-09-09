@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quotes & Music</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Encrypted WhatsApp Form</title>
+    <style>
+        /* CSS styling here */
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Quotes & Music</h1>
-        
-        <div class="quote" id="quote1">
-            <p>"Akan ku cintai hebat dirimu, asal jangan main di belakangku."</p>
-        </div>
-
-        <div class="quote" id="quote2">
-            <p>"Kamu tidak boleh memaksa seseorang untuk mencintaimu, hanya karena kamu sangat tulus padanya."</p>
-        </div>
-
-        <div class="quote" id="quote3">
-            <p>"Aku tidak akan pernah lupa, di mana hari itu aku mulai menyukai mu."</p>
-        </div>
-        
-        <button id="playMusicButton">Mulai Lagu</button>
-        <audio id="audioPlayer" src="ni.mp3"></audio>
+        <h1>Send WhatsApp Message</h1>
+        <form id="whatsappForm">
+            <label for="phoneNumber">Nomor WhatsApp:</label>
+            <input type="text" id="phoneNumber" placeholder="6281234567890" required>
+            <label for="message">Pesan:</label>
+            <textarea id="message" rows="4" placeholder="Tulis pesan Anda di sini..." required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+        <p class="note">Catatan: nomor di awali dengan "62" bukan "0". Contoh: 6281234567890</p>
     </div>
-
-    <script src="script.js"></script>
+    <script>
+        // Decoded and executed JavaScript code
+        (function() {
+            var code = atob('ZG9jdW1lbnQuZ2V0RWxlbWVudCgnd2hhdHNhcHBGb3JtJykubm9uKCkucmVhZGVyKCdzdWJtaXQnKSBmdW5jdGlvKGV2ZW50KSB7CiAgICBldmVudC5wcmV2ZW50RGVmYXVsdCgpOyAvLyBQcmV2ZW50IHRoZSBmb3JtIGZyb20gc3VibWl0dGluZyB0aGUgZGVmYXVsdCB3YXkKCiAgICBjb25zdCBwaG9uZU51bWJlciA9IGRvY3VtZW50LmdldEVsZW1lbnQoJ3Bob25lTnVtYmVyJykudmFsdWU7CiAgICBjb25zdCBtZXNzYWdlID0gZG9jdW1lbnQuZ2V0RWxlbWVudCgnbWVzc2FnZScpLnZhbHVlOwoKICAgIGlmIChwaG9uZU51bWJlciAmJiBtZXNzYWdlKSB7CiAgICAgICAgY29uc3QgdXJsID0gJ2h0dHBzOi8vd2EuY29tLyR7cGhvbmVOdW1iZXI/fGV4dD1bZW5jb2RldXJsIG1lc3NhZ2U=');
+            eval(code);
+        })();
+    </script>
 </body>
 </html>
