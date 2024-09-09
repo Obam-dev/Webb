@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio dan Teks</title>
+    <title>Kata-Kata & Audio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Audio dan Teks</h1>
-
-        <div class="text-section">
-            <p id="text1">Akan ku cintai hebat dirimu, asal jangan main dibelakang ku.</p>
-            <p id="text2">Kamu tidak boleh memaksa seseorang untuk mencintaimu, hanya karena kamu sangat tulus padanya.</p>
-            <p id="text3">Aku tidak akan pernah lupa, di mana hari itu aku mulai menyukaimu.</p>
+        <h1>Quotes & Audio</h1>
+        
+        <div class="quote">
+            <p>"Akan ku cintai hebat dirimu, asal jangan main di belakangku."</p>
         </div>
 
-        <button id="playAudio">Putar Audio</button>
-        <audio id="audioPlayer" controls style="display: none;">
-            <source src="audio/n.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
+        <div class="quote">
+            <p>"Kamu tidak boleh memaksa seseorang untuk mencintaimu, hanya karena kamu sangat tulus padanya."</p>
+        </div>
+
+        <div class="quote">
+            <p>"Aku tidak akan pernah lupa, di mana hari itu aku mulai menyukai mu."</p>
+        </div>
+        
+        <div class="audio-control">
+            <label for="audioFile">Upload Audio:</label>
+            <input type="file" id="audioFile" accept="audio/*">
+            <button id="playAudio" disabled>Putar Audio</button>
+        </div>
+
+        <audio id="n" controls style="display: none;"></audio>
     </div>
 
     <script src="script.js"></script>
