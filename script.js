@@ -1,17 +1,44 @@
-document.getElementById('whatsappForm').addEventListener('submit', function(event) {
-    event.preventDefault();  // Mencegah form reload halaman
-    
-    var phone = document.getElementById('phone').value.trim();
-    var message = document.getElementById('message').value.trim();
-    
-    // Validasi nomor, cek apakah dimulai dengan 62 dan memiliki panjang minimal 10 karakter
-    if (phone.startsWith('62') && phone.length >= 10) {
-        // Buat URL WhatsApp
-        var whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-        
-        // Buka WhatsApp di tab baru
-        window.open(whatsappUrl, '_blank');
-    } else {
-        alert('Nomor WhatsApp harus dalam format internasional dan dimulai dengan 62.');
-    }
-});
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+button {
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #1ebe57;
+}
