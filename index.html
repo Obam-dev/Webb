@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kirim Pesan WhatsApp</title>
+    <title>Audio dan Teks</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Kirim Pesan ke WhatsApp</h1>
-        <p>Pastikan nomor WhatsApp yang dimasukkan dalam format internasional, contohnya untuk Indonesia dimulai dengan "62" tanpa "0" di awal.</p>
-        
-        <form id="whatsappForm">
-            <label for="phone">Masukkan Nomor WhatsApp:</label>
-            <input type="text" id="phone" name="phone" placeholder="Contoh: 6281234567890" required>
-            
-            <label for="message">Pesan yang Ingin Disampaikan:</label>
-            <textarea id="message" name="message" placeholder="Tulis pesan Anda di sini" required></textarea>
-            
-            <button type="submit">Kirim Pesan</button>
-        </form>
-        
-        <p class="note">Gabut Gada Ide</p>
+        <h1>Audio dan Teks</h1>
+
+        <div class="text-section">
+            <p id="text1">Akan ku cintai hebat dirimu, asal jangan main dibelakang ku.</p>
+            <p id="text2">Kamu tidak boleh memaksa seseorang untuk mencintaimu, hanya karena kamu sangat tulus padanya.</p>
+            <p id="text3">Aku tidak akan pernah lupa, di mana hari itu aku mulai menyukaimu.</p>
+        </div>
+
+        <button id="playAudio">Putar Audio</button>
+        <audio id="audioPlayer" controls style="display: none;">
+            <source src="audio/audio-file.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
     </div>
 
     <script src="script.js"></script>
