@@ -1,19 +1,27 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kirim Pesan WhatsApp</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="form-container">
-        <h2>Kirim Pesan</h2>
+    <div class="container">
+        <h1>Kirim Pesan ke WhatsApp</h1>
+        <p>Pastikan nomor WhatsApp yang dimasukkan dalam format internasional, contohnya untuk Indonesia dimulai dengan "62" tanpa "0" di awal.</p>
+        
         <form id="whatsappForm">
-            <input type="text" id="phoneNumber" placeholder="Masukkan nomor WhatsApp" required>
-            <textarea id="message" placeholder="Tulis pesan Anda..." required></textarea>
+            <label for="phone">Masukkan Nomor WhatsApp:</label>
+            <input type="text" id="phone" name="phone" placeholder="Contoh: 6281234567890" required>
+            
+            <label for="message">Pesan yang Ingin Disampaikan:</label>
+            <textarea id="message" name="message" placeholder="Tulis pesan Anda di sini" required></textarea>
+            
             <button type="submit">Kirim Pesan</button>
         </form>
+        
+        <p class="note">Gabut Gada Ide</p>
     </div>
 
     <script src="script.js"></script>
